@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AllowNetworkAccess</key>
+	<true/>
+	<key>CFBundleDisplayName</key>
+	<string>Fok_it</string>
+	<key>CFBundleIdentifier</key>
+	<string>mursu.fok_it</string>
+	<key>CFBundleName</key>
+	<string>Fok_it</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>CloseBoxInsetX</key>
+	<integer>10</integer>
+	<key>CloseBoxInsetY</key>
+	<integer>10</integer>
+	<key>Height</key>
+	<integer>215</integer>
+	<key>MainHTML</key>
+	<string>fok_it.html</string>
+	<key>Width</key>
+	<integer>589</integer>
+</dict>
+</plist>
