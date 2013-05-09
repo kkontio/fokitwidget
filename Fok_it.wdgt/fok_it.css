@@ -2,12 +2,12 @@ body {
     margin: 0px;
 }
 
-#fingerpori {
+#fok_it {
     position: absolute;
     top: 15px;
     left: 13px;
     width: 560px;
-    height: 180px;
+    height: 202px;
 }
 
 #frontImg {
@@ -15,5 +15,5 @@ body {
     top: 0px;
     left: -2px;
     width: 590px;
-    height: 210px;
+    height: 232px;
 }
