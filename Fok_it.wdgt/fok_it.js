@@ -11,20 +11,14 @@
 */
 
 widget.onshow = onshow;
-var base_url = "http://nyt.fi/category/sarjakuvat/";
+var base_url = "http://nyt.fi/aihe/fokit/";
 
 function onshow() {
-    load_comic(base_url);
-}
-
-function load_comic(strip_url) {
-    $.get(strip_url, null, parse_data);
+	$.get(base_url, null, parse_data);
 }
 
 function parse_data(data) {
-    var style_string = $(data).find(".fok-it-image:first").attr("style");
-    var re = /background:url\(([^\(\)]*)\)/;
-    var current_img_url = style_string.match(re)[1];
+    var current_img_url = $(data).find(".image:first > img")[0].src;
     $("#fok_it").attr("src", current_img_url);
 }
 
