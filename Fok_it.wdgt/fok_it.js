@@ -1,11 +1,11 @@
 /*
     Fok_it widget - Fetches Fok_it comic strip
     from <http://nyt.fi/>
-  
+
     Fok_it Copyright (c) Joonas Rinta-Kanto
-    
+
     Project home: https://github.com/kkontio/fokitwidget
-    
+
     The MIT License (MIT)
 
     Copyright (c) 2014 Kai Kontio
@@ -30,14 +30,9 @@
 */
 
 widget.onshow = onshow;
-var base_url = "http://nyt.fi/aihe/fokit/";
 
 function onshow() {
-	$.get(base_url, null, parse_data);
+	$.get("http://nyt.fi/aihe/fokit/", function(data) {
+    $("#fok_it").attr("src", $(data).find("#full-comic img").first().attr("lazy-src"));
+  });
 }
-
-function parse_data(data) {
-    var current_img_url = $(data).find(".image:first > img")[0].src;
-    $("#fok_it").attr("src", current_img_url);
-}
-
