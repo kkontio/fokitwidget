@@ -32,7 +32,7 @@
 widget.onshow = onshow;
 
 function onshow() {
-	$.get("http://nyt.fi/aihe/fokit/", function(data) {
+  $.get("http://nyt.fi/aihe/fokit/", function(data) {
     $("#fok_it").attr("src", $(data).find("#full-comic img").first().attr("lazy-src"));
   });
 }
